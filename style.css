@@ -15,12 +15,58 @@ body {
 
 .container {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.644);
-  height: 20vh;
-  margin-top: 30vh;
+  background-color: rgba(0, 0, 0, 0.473);
+  height: 16vh;
+  margin-top: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+legend {
+  position: relative;
+  top: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+fieldset {
+  background-color: white;
+  border: none;
+  padding: 1rem 3rem;
+  width: 65vw;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.815);
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.main-text {
+  font-weight: 700;
+  width: 50vw;
+  margin-top: 12vh;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 0.3rem;
+  width: 20vw;
+  margin-bottom: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+input:focus {
+  border:none;
+  box-shadow: 1px 2px 3px 3px rgb(68, 68, 223);
 }
 
 img {
@@ -36,4 +82,35 @@ img {
   width: 35vw;
 }
 
+button {
+  margin: 2rem 3rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 2rem;
+  background-color: #3f633f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
 
+p {
+  padding-left: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #3f633f;
+  font-weight: 500;
+}
+
+.sub-text {
+  font-weight: 500;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  margin: 0% 5%;
+  bottom: 1rem;
+  font-size: 14px;
+}
