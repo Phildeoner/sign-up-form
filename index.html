@@ -11,7 +11,7 @@
   <div class="main">
     <div class="left">
       <div class="container">
-        <img src="./Images/odin-lined.png" alt="Odin Logo">
+        <img src="./Images/odin-lined.png" alt="Odin Logo"><span>ODIN</span>
       </div>
       <p class="text">Photo by Halie West on Unsplash</p>
     </div>
@@ -42,26 +42,28 @@
   
             <div>
               <label for="phone_number">PHONE NUMBER</label><br>
-              <input type="tel" id="phone_number" name="phone_number" placeholder="08012345678">
+              <input type="tel" id="phone_number" name="phone_number" placeholder="08012345678" pattern="(\d{11}([\-]\d{4})?)" title="Please enter a valid phone number, example: 08012345678" required>
             </div>
   
             <div>
               <label for="password">PASSWORD</label><br>
-              <input type="password" id="password" name="password" required>
+              <input class="pwd" type="password" id="password" name="password" required>
             </div>
   
             <div>
-              <label for="password">CONFIRM PASSWORD</label><br>
-              <input type="password" id="password" name="password" required>
+              <label for="confirm_password">CONFIRM PASSWORD</label><br>
+              <input class="pwd" type="password" id="confirm_password" name="confirm_password" required>
             </div>
           </div>
+          <p id="validation"></p>
         </fieldset>
 
-        <button type="submit">Create Account</button>
+        <button id="btn" type="submit">Create Account</button>
       </form>
       <p class="sub-text">Alraedy have an account? <a href="#">Log in</a></p>
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
