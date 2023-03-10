@@ -73,7 +73,7 @@ input:focus {
 
 span {
   color: white;
-  font-family: Norse;
+  font-family: Norse, Arial, Helvetica, sans-serif;
   font-size: 5rem;
 }
 
